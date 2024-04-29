@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css ">
+</head>
+<body>
+  <h1 class="name" >Calculator</h1>
+  <h1 class="display"></h1>
+
+  <!-- 1st row -->
+  <p>
+  <button id="button" class="number" onclick="
+ 
+ updatecalc('1');
+  ">1</button>
+
+  <button id="button" class="number" onclick="
+
+ updatecalc('2');
+  ">2</button>
+
+  <button id="button" class="number" onclick="
+
+ updatecalc('3');
+  ">3</button>
+
+<button id="button" class="symbol" onclick="
+updatecalc('+');
+
+">+</button>
+ </p>
+
+ <!--2nd row  -->
+
+ <p>
+  <button id="button" class="number" onclick="
+
+ updatecalc('4');
+  ">4</button>
+
+  <button id="button" class="number" onclick="
+
+ updatecalc('5');
+  ">5</button>
+
+  <button id="button" class="number" onclick="
+
+ updatecalc('6');
+  ">6</button>
+
+<button id="button" class="symbol" onclick="
+
+updatecalc('-');
+">-</button>
+ </p>
+
+ <!-- 3rd row -->
+
+ <p>
+  <button id="button" class="number" onclick="
+
+ updatecalc('7');
+  ">7</button>
+
+  <button id="button" class="number" onclick="
+
+ updatecalc('8');
+  ">8</button>
+
+  <button id="button" class="number" onclick="
+ 
+ updatecalc('9');
+  ">9</button>
+
+<button id="button" class="symbol" onclick="
+
+updatecalc('*');
+">*</button>
+ </p>
+
+ <!-- 4th row -->
+
+ <p>
+  <button id="button" class="number" onclick="
+ 
+ updatecalc('0');
+  ">0</button>
+
+  <button id="button" class="number" onclick="
+ 
+ updatecalc('.');
+  ">.</button>
+
+<button id="button" class="number" onclick="
+//eval(calculation);
+calculation=eval(calculation);
+document.querySelector('.display').innerHTML=calculation;
+localStorage.setItem('calc',calculation);
+">=</button>
+
+<button id="button" class="symbol" onclick="
+updatecalc('/');
+">/</button>
+ </p>
+  <p>
+  <button id="button" class="number1" onclick="
+    calculation='';
+    document.querySelector('.display').innerHTML=calculation;
+    localStorage.setItem('calc',calculation);
+    ">
+    Clear
+  </button>
+ 
+  
+</p>
+  <script src="calculator.js"></script>
+</body>
+</html>
